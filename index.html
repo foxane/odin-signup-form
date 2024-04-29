@@ -1,1 +1,76 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <div class="logo">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="Odin logo"
+            srcset=""
+          />
+          Odin
+        </div>
+        <div class="img-src">
+          <p>
+            Image by
+            <a
+              href="http://unsplash.com/@bryanbrittos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bryan Brittos
+            </a>
+            on
+            <a
+              href="https://unsplash.com/photos/a-river-surrounded-by-moss-covered-rocks-in-the-snow-jxBsk3dajPU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
+            </a>
+          </p>
+        </div>
+      </section>
+      <section class="right">
+        <div class="description">
+          <p>
+            This is not a real online service! Whatever the service, make sure
+            to give us your data. We are 100% will NOT not sell your data to
+            anyone.
+          </p>
+          <p>gimme your data hehe</p>
+        </div>
+        <form action="https://databroker.com/dummy-slug/" method="post">
+          <p class="form-header">Let's make us rich!</p>
+          <fieldset class="input">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" required />
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" required />
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required />
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="number" name="phone-number" minlength="10" required />
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" minlength="6" />
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" pattern="password" />
+          </fieldset>
+          <div class="submit">
+            <button type="Submit">Create Account</button>
+            <p class="log-in">
+              Already have an account?
+              <a href="">Log in</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

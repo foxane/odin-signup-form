@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+main {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  flex: 1 1 40rem;
+  background-image: url(images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Jersey 10', sans-serif;
+  letter-spacing: 4px;
+}
+.logo {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.384);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.img-src {
+  position: absolute;
+  bottom: 25px;
+  font-size: 1rem;
+}
+.left a:any-link{
+    color: hsl(39, 60%, 60%);
+    text-decoration: none;
+}
+.left a:hover, .left a:focus{
+    color: hsl(65, 60%, 60%);
+}

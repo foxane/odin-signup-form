@@ -20,7 +20,7 @@
           <img
             src="https://asset.brandfetch.io/idqq2v1naO/idxqyQyT9i.png"
             alt="Odin logo"
-            width="50px"
+            width="50"
           />
           <h1>Odin</h1>
         </div>
@@ -46,29 +46,59 @@
         </div>
       </section>
       <section class="right">
-        <div class="description">
-          <p>
-            This is not a real online service! Whatever the service, make sure
-            to give us your data. We are 100% will NOT not sell your data to
-            anyone.
-          </p>
-          <p>gimme your data hehe</p>
-        </div>
         <form action="https://databroker.com/dummy-slug/" method="post">
+          <div class="description">
+            <p>
+              This is not a real online service! Whatever the service, make sure
+              to give us your data. We are 100% will NOT not sell your data to
+              anyone.
+            </p>
+            <p>gimme your data hehe</p>
+          </div>
           <fieldset class="input">
-            <p class="form-header">Let's make us rich!</p>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" required />
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" required />
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" required />
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="number" name="phone-number" minlength="10" required />
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" minlength="6" />
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" pattern="password" />
+            <div class="fieldset-wrapper">
+              <p class="form-header">Let's make us rich!</p>
+              <div class="inputs">
+                <label>
+                  FIRST NAME
+                  <input type="text" name="first-name" required />
+                </label>
+
+                <label>
+                  LAST NAME
+                  <input type="text" name="last-name" required />
+                </label>
+
+                <label>
+                  EMAIL
+                  <input type="email" name="email" required />
+                </label>
+
+                <label>
+                  PHONE NUMBER
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    minlength="10"
+                    required
+                  />
+                </label>
+
+                <label>
+                  PASSWORD
+                  <input type="password" name="password" minlength="6" />
+                </label>
+
+                <label>
+                  CONFIRM PASSWORD
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    pattern="password"
+                  />
+                </label>
+              </div>
+            </div>
           </fieldset>
           <div class="submit">
             <button type="Submit">Create Account</button>

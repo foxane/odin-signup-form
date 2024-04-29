@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #dddddd;
+  background-color: #fff;
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -20,7 +20,7 @@ main {
   align-items: center;
 }
 .left {
-  flex: 1 1 60rem;
+  flex: 1 1 40vw;
   background-image: url(images/bg.jpg);
   background-position: center;
   background-size: cover;
@@ -60,7 +60,7 @@ h1 {
 }
 /* || RIGHT */
 .right {
-  flex: 1 1 120rem;
+  flex: 1 1 60vw;
 }
 .right form > * {
   padding-left: 40px;
@@ -72,7 +72,7 @@ h1 {
 }
 fieldset {
   background-color: white;
-  box-shadow: 5px 5px 2px 2px rgb(187, 187, 187);
+  box-shadow: 5px 5px 10px 2px rgb(187, 187, 187);
   border: none;
 }
 .fieldset-wrapper {
@@ -95,7 +95,7 @@ fieldset {
   height: 200px;
 }
 label {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   display: flex;
@@ -103,10 +103,35 @@ label {
   min-width: 200px;
 }
 label > input {
+  margin-top: 5px;
   font-size: 1.2rem;
   border-radius: 5px;
   border: 1px solid grey;
   text-indent: 10px;
   padding: 3px 0 ;
   background-color: hsl(0, 16%, 96%);
+}
+.submit {
+  margin-top: 2rem;
+}
+.submit > button {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5em 3em;
+  border-radius: 5px;
+  background-color: hsl(39, 96%, 28%);
+  color: white;
+}
+.submit > button:hover {
+  cursor: pointer;
+  background-color: hsl(39, 98%, 50%);
+}
+
+.log-in > a:any-link {
+  color: hsl(39, 89%, 43%);
+  text-decoration: none;
+}
+.log-in > a:hover, .log-in > a:focus {
+  color: hsl(40, 96%, 31%);
 }
